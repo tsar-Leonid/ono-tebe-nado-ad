@@ -5,17 +5,17 @@
   align-items: center;
 }
 
-.header_menu {
+.header__menu {
   font-size: 18px;
   line-height: 21px;
 }
 
-.header_links-list {
+.header__links-list {
   display: flex;
   gap: 32px;
 }
 
-.header__links-list-item{
+.header__links-list-item {
   list-style: circle;
 }
 
@@ -30,10 +30,6 @@
 
 .header__link_active {
   text-decoration: none;
-}
-
-.header__links-list-item {
-
 }
 
 .header__logo {
@@ -56,57 +52,91 @@
 }
 
 .address__link {
-
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
 }
 
 .overlay {
-
+  position: absolute;
+  inset: 0;
+  background-color: #000;
+  opacity: 0.6;
 }
 
-.header-address {
+.header__address {
   justify-self: end;
 }
 
 .cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   min-height: 755px;
   padding: 50px;
+  color: #fff;
+  text-transform: uppercase;
   background: url(../images/cover.jpg) center / cover;
-}
-
-.overlay {
-
+  position: relative;
 }
 
 .cover__title {
-
+  position: relative;
+  z-index: 1;
+  padding-top: 115px;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 115px;
+  letter-spacing: 0.3em;
 }
 
 .aligned-text {
-
+  display: block;
 }
 
 .aligned-text_left {
-
+  text-align: left;
 }
 
 .aligned-text_center {
-
+  line-height: 140px;
+  text-align: center;
 }
 
 .aligned-text_right {
+  line-height: 100px;
+  text-align: right;
+}
 
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
 }
 
 .cover__description {
-
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .cover__description-text {
-
+  padding-left: 28px;
+  word-spacing: 20px;
 }
 
-.bet-button{
-
+.bet-button {
+  padding: 12px 32px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .lots {
@@ -214,7 +244,7 @@
 
 }
 
-.ooter__social-list-item {
+.footer__social-list-item {
 
 }
 
@@ -226,6 +256,3 @@
 
 }
 
-.footer__social-list-item {
-
-}
